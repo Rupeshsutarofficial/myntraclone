@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Myntra</title>
+    <link rel="stylesheet" href="bag.css">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -14,7 +15,7 @@
   <body>
     <header>
       <div class="logo">
-        <a href="#">
+        <a href="index.html">
           <img
             class="myntra_logo"
             src="Logo/myntra_logo.webp"
@@ -46,15 +47,18 @@
           <span class="material-symbols-outlined action_icon"> favorite </span>
           <span class="action_name">Wishlist</span>
         </div>
-        <div class="action_container">
+        <a class="action_container" href="bag.html">
           <span class="material-symbols-outlined action_icon">
             shopping_bag
           </span>
           <span class="action_name">Bag</span>
-        </div>
+          <span class="bag_items_count">0</span>
+        </a>
       </div>
     </header>
     <main>
+      <div class="items-container">  
+      </div>
       <div class="banner_container">
         <img class="banner_image" src="Banner/banner.jpg" alt="" />
       </div>
@@ -163,5 +167,7 @@
       
       <div class="copyright">© 2023 www.myntra.com. All rights reserved.</div>
     </footer>
+    <script src="itemsData.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
